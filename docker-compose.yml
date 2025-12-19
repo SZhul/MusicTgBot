@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  music-bot:
+    image: sergeyzhul/karaoke-music-bot:latest
+    container_name: music-bot
+    environment:
+      - BOT_TOKEN=8495688303:AAFqt792uv7OhxsHyDG1FukK83QQ0LevKIc
+      - BOT_USERNAME=MusicLotto_bot
+    volumes:
+      - ./music:/app/music
+    restart: always
+    networks:
+      - bot-network
+
+networks:
+  bot-network:
+    driver: bridge
