@@ -1,0 +1,6 @@
+{
+  "build": {
+    "builderType": "pack"
+  },
+  "start": "java -jar target/KaraokeMusicBot-1.0-SNAPSHOT.jar"
+}
